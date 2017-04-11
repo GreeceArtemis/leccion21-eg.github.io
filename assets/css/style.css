@@ -1,0 +1,145 @@
+.link{
+    font-weight: 700;
+    padding: 21px;
+    display: inline-block;
+}
+.logo{
+    float: right;
+}
+header{
+    position: fixed;
+    background: white;
+    width: 100%;
+    top: 0;
+
+}
+.menu{
+    padding: 14px 70px;
+    overflow: auto;
+}
+#home{
+    background-image: url(../img/bg-home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 554px;
+    text-align: center;
+    margin-top: 80px;
+}
+#home .container{
+    color: white;
+    padding: 70px;
+
+}
+.text-home{
+    font-size: 53px;
+}
+.btn-home{
+    background: #2ECC71;
+    color: #fff;
+    padding: 11px 20px;
+    border-radius: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 63px;
+    display: inline-block;
+    font-size: 14px;
+}
+#services{
+    background-color: #F17C72;
+    text-align: center;
+    color: #fff;
+    padding: 70px 7px;
+}
+.box-services{
+    display: inline-block;
+    width: 30%;
+    margin-top: 63px;
+}
+.text-services{
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+.box-imagen{
+    display: inline-block;
+
+}
+footer{
+  text-align: center;
+  height: 70px;
+  background: #373B47;
+  color: white;
+  padding-top: 7px;
+}
+.box-work{
+  display: block;
+  text-align: center;
+}
+.box-imagen{
+  display: inline-block;
+  margin: 30px;
+}
+.p3{
+  display: block;
+  padding: 30px 300px;
+  font-size: 16px;
+}
+.box-imagenes{
+  display: block;
+  text-align: center;
+}
+.img-boximages{
+  width: 300px;
+}
+.boximages{
+  display: inline-block;
+  margin: 25px;
+  width: 28.5%;
+}
+.center{
+  text-align: center;
+}
+ul{
+  padding-left: 0px;
+  margin: 50px;
+}
+#popup1,#popup2,#popup3,#popup4,#popup5,#popup6,#popup7,#popup8,#popup9,#popup10,#popup11,#popup12 {
+   visibility: hidden;
+   opacity: 0;
+   margin-top: -300px;
+}
+#popup1:target,#popup2:target,#popup3:target,#popup4:target,#popup5:target,#popup6:target,#popup7:target,#popup8:target,#popup9:target,#popup10:target,#popup11:target,#popup12:target{
+   visibility:visible;
+   opacity: 1;
+   background-color: rgba(0,0,0,0.8);
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin:0;
+   z-index: 999;
+   -webkit-transition:all 1s;
+   -moz-transition:all 1s;
+   transition:all 1s;
+}
+.popup-contenedor {
+   position: relative;
+   margin:7% auto;
+   padding:30px 50px;
+   background-color: #fafafa;
+   color:#333;
+   border-radius: 3px;
+   width:50%;
+}
+a.popup-cerrar {
+   position: absolute;
+   top:3px;
+   right:3px;
+   background-color: #333;
+   padding:7px 10px;
+   font-size: 20px;
+   text-decoration: none;
+   line-height: 1;
+   color:#fff;
+}

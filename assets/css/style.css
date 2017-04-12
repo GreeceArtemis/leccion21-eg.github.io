@@ -95,6 +95,7 @@ footer{
   display: inline-block;
   margin: 25px;
   width: 28.5%;
+  height: 288px;
 }
 .center{
   text-align: center;
@@ -111,7 +112,7 @@ ul{
 #popup1:target,#popup2:target,#popup3:target,#popup4:target,#popup5:target,#popup6:target,#popup7:target,#popup8:target,#popup9:target,#popup10:target,#popup11:target,#popup12:target{
    visibility:visible;
    opacity: 1;
-   background-color: rgba(0,0,0,0.8);
+   background-color: rgba(113,138,250,0.8);
    position: fixed;
    top:0;
    left:0;
@@ -127,23 +128,23 @@ ul{
 .popup-contenedor {
    position: relative;
    margin:7% auto;
-   padding:30px 50px;
+   padding:5px 5px;
    background-color: #fafafa;
    color:#333;
    border-radius: 3px;
-   width:400px;
+   width: 509px;
 }
 a.popup-cerrar {
-   position: absolute;
-   top:3px;
-   right:3px;
-   background-color: #333;
-   padding:7px 10px;
-   font-size: 20px;
-   text-decoration: none;
-   line-height: 1;
-   color:#fff;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #a9cfd4;
+    padding: 5px 5px;
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
 }
 .img-boxmodal{
-  width: 300px;
+  width: 500px;
+  height: 500px;
 }

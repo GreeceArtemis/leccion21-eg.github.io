@@ -49,7 +49,7 @@ function divImage(cantImages,nameFile,proyects){
           divForPop.appendChild(divForImageModal);
           var aModal=document.createElement("a");
           aModal.setAttribute("class","popup-cerrar");
-          aModal.setAttribute("href","#");
+          aModal.setAttribute("href","");
           aModal.innerHTML="X";
           divForPop.appendChild(aModal);
           divForModal.appendChild(divForPop);

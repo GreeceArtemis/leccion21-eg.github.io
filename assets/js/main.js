@@ -1,6 +1,10 @@
-var cantImages =12;
+//Nombre de la lista de produtos
+var products = ["Tayman", "Kerala", "The Brass Coq", "Sungenre", "Mitragyna Speciosa",
+ "Foam King", "Volition", "Ink", "Gilkon", "Owls & Apples", "Sherwood", "Platinum"];
+var cantImages =products.length;
+//Dirección de la carpeta de imágenes
 var nameFile="assets/img/";
-function divImage(cantImages,nameFile,proyects){
+function divImage(products,cantImages,nameFile,proyects){
       var contForDiv=document.getElementById(proyects);
       var listImages=document.createElement("ul");
       for(var i=1;i<cantImages+1;i++){
@@ -8,9 +12,9 @@ function divImage(cantImages,nameFile,proyects){
 
           liImages.setAttribute("class","boximages");
           var divForImage=document.createElement("div");
-  //Agregando el nombre
-          var name="NOMBRE DE PROYECTO";
-    //
+          //Designando el nombre de cada producto a name
+          var name=products[i-1];
+          //
           contForDiv.appendChild(divForImage);
           divForImage.setAttribute("id",name);
 
@@ -48,8 +52,8 @@ function divImage(cantImages,nameFile,proyects){
           divForImageModal.appendChild(imgModal);
           divForPop.appendChild(divForImageModal);
           var aModal=document.createElement("a");
-          aModal.setAttribute("class","popup-cerrar");
-          aModal.setAttribute("href","");
+          aModal.setAttribute("class","modal-close");
+          aModal.setAttribute("href","#"+name);
           aModal.innerHTML="X";
           divForPop.appendChild(aModal);
           divForModal.appendChild(divForPop);
@@ -58,4 +62,4 @@ function divImage(cantImages,nameFile,proyects){
     contForDiv.appendChild(listImages);
   }
 
-  divImage(cantImages,nameFile,"proyects");
+  divImage(products,cantImages,nameFile,"proyects");
